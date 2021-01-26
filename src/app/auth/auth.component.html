@@ -1,0 +1,92 @@
+<section *ngIf="!setRegister">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-6 card">
+                <div class="card-body">
+                    <h3 class="mb-3">Login</h3>
+                    <form [formGroup] = loginForm>
+                        <div class="form-group">
+                            <input type="text" formControlName = "userName" 
+                                   (input)="checkLoginValueChange()" 
+                                   class="form-control" id="userInput" 
+                                   aria-describedby="userHelp" placeholder="User Name">
+                          </div>
+                        <div class="form-group">
+                          <input type="password" formControlName = "password" 
+                                 (input)="checkLoginValueChange()" 
+                                 class="form-control" id="exampleInputPassword" 
+                                 aria-describedby="passwordHelp" 
+                                 placeholder="Enter Password">
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" [disabled]="isLoginSubmit" 
+                                    (click)="onSubmitLogin()" 
+                                    class="btn btn-primary btn-block">Submit</button>
+                        </div>
+                        <div>
+                            <button type="submit" 
+                                    class="btn btn-primary btn-block" 
+                                    (click)="setRegisterCard()">Registeration</button>
+                        </div>
+                      </form> 
+                 </div> 
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section *ngIf="setRegister">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-6 card">
+                <div class="card-body">
+                    <h3 class="mb-3">Registeration</h3>
+                    <form [formGroup] = registeration>
+                        <div class="form-group">
+                            <input type="text" formControlName = "name" 
+                                  class="form-control" 
+                                  (input)="checkValueChange()" 
+                                  id="userInput" 
+                                  aria-describedby="userHelp" 
+                                  placeholder="User Name">
+                          </div>
+
+                          <div class="form-group">
+                            <input type="email" formControlName = "email" 
+                                   class="form-control" 
+                                   (input)="checkValueChange()" 
+                                   id="exampleInputEmail1" 
+                                   aria-describedby="emailHelp" 
+                                   placeholder="Enter email">
+
+                          </div>
+
+                          <div class="form-group">
+                            <input type="phone" 
+                                   formControlName = "phone" 
+                                   class="form-control" 
+                                   (input)="checkValueChange()" 
+                                   id="exampleInputPhone"  
+                                   placeholder="Enter phone number">
+
+                          </div>
+
+                        <div class="form-group">
+                          <input type="text" 
+                                 formControlName = "password" 
+                                 class="form-control" 
+                                 (input)="checkValueChange()" 
+                                 id="exampleInputPhone" 
+                                 placeholder="Enter password">
+                        </div>
+                        <button type="submit" 
+                                [disabled]="isRegisterSubmit" 
+                                (click)="onSubmitRegister()" 
+                                class="btn btn-primary btn-block">Submit</button>
+                      </form> 
+                 </div> 
+            </div>
+        </div>
+    </div>
+</section>

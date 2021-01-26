@@ -1,0 +1,23 @@
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">All Categories</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of allCategory; let i = index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{data.categoryName}}</td>
+            <td><div class="">
+                <a class="btn btn-warning" 
+                    data-toggel="modal" (click)="deleteCategory(data.categoryName,i)" data-target="#addUserModel">
+                    <i class="fa fa-plus"></i>Delete
+                </a>
+            </div></td>
+          </tr>
+        </tbody>
+      </table>
+</div>

@@ -1,0 +1,9 @@
+.header {
+    color: blueviolet;
+}
+
+:host::ng-deep .ui-megamenu {
+    padding: 0;
+    background-color: blue !important;
+    border: 1px solid #c8c8c8;
+}

@@ -1,0 +1,55 @@
+.nav-item.active{
+    border-left: #444 3px solid;
+}
+body {
+    overflow-x: hidden;
+}
+.carousel-item{
+    height: 450px;
+}
+
+.carousel-image-1 {
+    background:url('src/assets/carousel-img/BGWN5712.JPG');
+    background-size: cover;
+}
+.carousel-image-2 {
+    background:url('src/assets/carousel-img/BVFQ1343.JPG');
+    background-size: cover;
+}
+.carousel-image-3 {
+    background:url('src/assets/carousel-img/EDBR0920.JPG');
+    background-size: cover;
+}
+
+.fa {
+    font-size: 55px;
+}
+
+#home-heading {
+    position: relative;
+    min-height: 200px;
+    background:url('src/assets/home-header/HABS1692.JPG');
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+}
+
+.dark-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+footer#main-footer {
+    background: #000;
+    color: #fff;
+}
+
+/* .chairImage {
+    background:url('src/assets/product/chair/pngtree-yellow-chair-cartoon-chair-hand-painted-chair-chair-decoration-png-image_397905.jpg');
+    background-size: cover;
+} */

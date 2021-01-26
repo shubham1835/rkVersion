@@ -1,0 +1,38 @@
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Item Code</th>
+            <th scope="col">Price</th>
+            <th scope="col">Item</th>
+            <th scope="col">Update Action</th>
+            <th scope="col">Delete Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of allProduct; let i = index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{data.itemCode}}</td>
+            <td>{{data.price}}</td>
+            <td>{{data.item}}</td>
+            <td>
+                <div class="">
+                    <a class="btn btn-warning" 
+                        data-toggel="modal" data-target="#addUserModel">
+                        <i class="fa fa-plus"></i>Update
+                    </a>
+                </div>
+            </td>
+            <td>
+                <div class="">
+                    <a class="btn btn-warning" 
+                        data-toggel="modal" data-target="#addUserModel">
+                        <i class="fa fa-plus"></i>Delete
+                    </a>
+                </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>
