@@ -1,0 +1,100 @@
+<section id="action" class="py-4 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <a class="btn btn-primary btn-block" 
+                    data-toggel="modal" (click)="createCategory()" data-target="#addPostModel">
+                    <i class="fa fa-plus"></i>Add Category
+                </a>
+            </div> 
+            <div class="col-md-2">
+                <a class="btn btn-success btn-block" 
+                    data-toggel="modal" (click)="manageCategory()" data-target="#addCategoryModel">
+                    <i class="fa fa-plus"></i>Manage Category
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="btn btn-warning btn-block" 
+                    data-toggel="modal" (click)="addProduct()" data-target="#addUserModel">
+                    <i class="fa fa-plus"></i>Add Product
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="btn btn-warning btn-block" 
+                    data-toggel="modal" (click)="manageProduct()" data-target="#addUserModel">
+                    <i class="fa fa-plus"></i>Manage Product
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="btn btn-success btn-block" 
+                    data-toggel="modal" (click)="manageOrder()" data-target="#addUserModel">
+                    <i class="fa fa-plus"></i>Manage Order
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="post">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-11">
+                <div class="card">
+                    <div class="card-header">
+                        <container-element [ngSwitch]="selectedMenu">
+                        <ng-container *ngSwitchCase="'create'">
+                            <app-create-category></app-create-category>
+                        </ng-container>
+                        <ng-container *ngSwitchCase="'manage'">
+                            <app-manage-category></app-manage-category>
+                        </ng-container>
+                        <ng-container *ngSwitchCase="'addProduct'">
+                            <app-create-product></app-create-product>
+                        </ng-container>
+                        <ng-container *ngSwitchCase="'manageProduct'">
+                            <app-manage-product></app-manage-product>
+                        </ng-container>
+                        <ng-container *ngSwitchCase="'manageOrder'">
+                            <app-manage-order></app-manage-order>
+                        </ng-container>
+                    </container-element>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="col-md-3">
+                <div class="card text-center bg-primary text-white mb-3">
+                    <div class="card-body">
+                        <h3>Post</h3>
+                        <h1 class="display-4">
+                            <i class="fa fa-pencil"></i>6
+                        </h1>
+                        <a href="#" class="btn btn-outline btn-sm">View</a>
+                    </div>
+                </div>
+
+                <div class="card text-center bg-success text-white mb-3">
+                    <div class="card-body">
+                        <h3>Categories</h3>
+                        <h1 class="display-4">
+                            <i class="fa fa-folder-open-o"></i>4
+                        </h1>
+                        <a href="#" class="btn btn-outline btn-sm">View</a>
+                    </div>
+                </div>
+
+                <div class="card text-center bg-warning text-white mb-3">
+                    <div class="card-body">
+                        <h3>User</h3>
+                        <h1 class="display-4">
+                            <i class="fa fa-users"></i>6
+                        </h1>
+                        <a href="#" class="btn btn-outline btn-sm">View</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>
+

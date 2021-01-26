@@ -1,0 +1,27 @@
+<!-- <h2>This is contact us..!</h2> -->
+
+<section class="py-5">
+    <div class="container card">
+        <div class="row card-body">
+            <div class="col-md-12 mb-12 text-center">
+                <div class="mb-5">
+                <h2 class="card-title">Enter Category</h2>
+                <p>We like to create things with fun. Add new category</p>
+            </div>
+            </div>
+            <div class="col-md-3 mb-1"></div>
+            <div class="col-md-6 mb-3">
+                <div>
+                    <form [formGroup] = createcCategoryForm>
+                        <div class="form-group">
+                            <input type="text" formControlName = "categoryName" class="form-control" id="userInput" aria-describedby="userHelp" placeholder="Enter Category">
+                            <small id="userHelp" class="form-text text-muted">We'll never share your user with anyone else.</small>
+                          </div>
+                        <button type="submit" (click) = "saveEnterCategoryDtl()" class="btn btn-primary btn-block">Submit</button>
+                      </form> 
+                 </div> 
+            </div>
+            <div class="col-md-3 mb-1"></div>
+        </div>
+    </div>
+</section>

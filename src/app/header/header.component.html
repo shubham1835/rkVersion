@@ -1,0 +1,56 @@
+<!-- <p-megaMenu [model]="items" styleClass="header" (click)="getHeaderValue($event)"></p-megaMenu> -->
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+    <div class="container">
+        <a href="" class="navbar-brand">Home</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown px-2">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Product</a>
+                    <div class="dropdown-menu">
+                        <a routerLink = "./chair"  class="dropdown-item">Chair</a>
+                        <a routerLink = "./bed" class="dropdown-item">Bed</a>
+                        <a routerLink = "./dinning" class="dropdown-item">Dinning</a>
+                        <a routerLink = "./" class="dropdown-item">Others</a>
+                    </div>
+                </li>
+
+                <li class="nav-item px-2">
+                    <a routerLink="./portfolio" class="nav-link" active>Portfolio</a>
+                </li>
+
+                <li class="nav-item px-2">
+                    <a href="index.html" class="nav-link" active>About Us</a>
+                </li>
+
+                <li class="nav-item px-2">
+                    <a href="./contactUs" class="nav-link" active>Contact Us</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+                <li class="new-item dropdown mr-3">
+                    <a routerLink="user-profile" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-user"></i>Welcome Vaam
+                    </a>
+                    <!-- <div class="dropdown-menu">
+                        <a routerLink="user-profile" class="dropdown-item">
+                            <i class="fa fa-user-circle"></i>Profile
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="fa fa-gear"></i>setting
+                        </a>
+                    </div> -->
+                </li>
+                <li class="nav-item">
+                    <a href="./auth" class="nav-link">
+                        <i class="fa fa-user-times"></i> LogIn
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
