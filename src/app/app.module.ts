@@ -16,7 +16,7 @@ import { ProductModule } from './product/product.module';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { TopSalesComponent } from './home/top-sales/top-sales.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { AdminPanelModule } from './admin-panel/admin-panel.module';
+// import { AdminPanelModule } from './admin-panel/admin-panel.module';
 import { HttpClientModule } from '@angular/common/http';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 
@@ -43,7 +43,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     MegaMenuModule,
     ProductModule,
     FormsModule,
-    AdminPanelModule,
+    // AdminPanelModule, //remove from app module and use lazy loadin feature.
     HttpClientModule
   ],
   providers: [],

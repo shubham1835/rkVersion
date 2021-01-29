@@ -13,7 +13,11 @@ const routes: Routes = [
   { path: 'auth', component: AuthComponent},
   { path: 'contactUs', component: ContactUsComponent},
   { path: 'portfolio', component: PortfolioComponent},
-  { path: 'user-profile', component: UserProfileComponent}
+  { path: 'user-profile', component: UserProfileComponent},
+  { 
+    path: 'admin',
+   loadChildren: () => import('./admin-panel/admin-panel.module').then(m => m.AdminPanelModule)
+} // lazyloading the admin panel module.
 ];
 
 @NgModule({
