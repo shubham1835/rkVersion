@@ -19,6 +19,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 // import { AdminPanelModule } from './admin-panel/admin-panel.module';
 import { HttpClientModule } from '@angular/common/http';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     PortfolioComponent,
     ContactUsComponent,
     UserProfileComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
