@@ -5,6 +5,7 @@ import { AuthComponent } from './auth/auth.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { CartComponent } from './cart/cart.component';
 
 
 const routes: Routes = [
@@ -17,7 +18,9 @@ const routes: Routes = [
   { 
     path: 'admin',
    loadChildren: () => import('./admin-panel/admin-panel.module').then(m => m.AdminPanelModule)
-} // lazyloading the admin panel module.
+}, // lazyloading the admin panel module.
+
+  { path: 'cart', component: CartComponent},
 ];
 
 @NgModule({
