@@ -11,12 +11,12 @@ import { AuthService } from '../services/auth.service';
 export class HomeComponent implements OnInit {
 
   imgSalesGallery: any = [
-    { routerPath: './chair', imgUrl: 'assets/product/bed/unnamed.png'},
-    { routerPath: './chair', imgUrl: 'assets/product/bed/unnamed.png'},
-    { routerPath: './chair', imgUrl: 'assets/product/bed/unnamed.png'},
-    { routerPath: './chair', imgUrl: 'assets/product/bed/unnamed.png'},
-    { routerPath: './chair', imgUrl: 'assets/product/bed/unnamed.png'},
-    { routerPath: './chair', imgUrl: 'assets/product/bed/unnamed.png'},
+    { routerPath: './chair', imgUrl: 'assets/carousel-img/1.jpg', productName: 'Gum Boot'},
+    { routerPath: './chair', imgUrl: 'assets/carousel-img/5.jpg', productName: 'Gum Boot'},
+    { routerPath: './chair', imgUrl: 'assets/carousel-img/3.jpg', productName: 'Welding Gloves'},
+    { routerPath: './chair', imgUrl: 'assets/carousel-img/2.jpg', productName: 'Hammer'},
+    { routerPath: './chair', imgUrl: 'assets/carousel-img/3-2.jpg', productName: 'Helmet'},
+    { routerPath: './chair', imgUrl: 'assets/carousel-img/l2.jpg', productName: 'Level Ruler'},
   ];
 
   itemCategory: any = [
